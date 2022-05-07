@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "singularName": "story",
+    "pluralName": "stories",
+    "displayName": "story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "summary": {
+      "type": "text"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_field": {
+      "type": "string"
+    },
+    "author_img": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "illustrated_by": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "stories"
+    }
+  }
+}

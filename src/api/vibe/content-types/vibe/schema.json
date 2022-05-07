@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vibes",
+  "info": {
+    "singularName": "vibe",
+    "pluralName": "vibes",
+    "displayName": "vibe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgUrl": {
+      "type": "string",
+      "required": true
+    },
+    "illustrated_by": {
+      "type": "string"
+    },
+    "posted_by": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}
